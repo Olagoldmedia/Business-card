@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family:poppins,sans-serif;
+}
+body{
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background :#ffffff;
+}
+.container{
+    background :#eee;
+    padding:25px;
+    max-width:350px;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:24px ;
+    position :relative;
+    box-shadow : 0 8px 24px rgba(0,0,0,0.2);
+    
+}
+.container::before {
+    content:'';
+    background :#662bff;
+    width:100% ;
+    height :37%;
+    position : absolute ;
+    top:0;
+    border-radius:24px 24px 0 0;
+    
+    
+}
+.images{
+    width:200px;
+    height: 200px;
+    background:#8098ff ;
+    padding:3px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    object-fit:cover;
+    margin-bottom:10px;
+    z-index:3;
+    
+}
+.pics{
+    width :100%;
+    height:100%;
+    border :3px solid white;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    
+    
+    
+}
+.info{
+    width :100%;
+    padding:20px;
+    display : flex;
+    align-items: center ;
+    flex-direction:column;
+    
+}
+.name{
+    font-size:27px;
+    font-weight:500;
+}
+.job{
+    font-weight:300;
+}
+.icon{
+    
+    display:flex;
+    align-item: center ;
+    
+    
+}
+.link{
+    text-decoration: none ;
+    background :blue;
+    color :white;
+    font-size:18px;
+    border-radius: 50%;
+    width:34px;
+    display :flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 8px;
+    height:34px;
+}
+.buttons{
+    margin-top:25px;
+    display :flex;
+    align-items:center;
+    z-index:4;
+}
+.button{
+    background:#512bff ;
+    padding: 8px 24px;
+    color :white;
+    font-weight:300;
+    border-radius: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 10px;
+    border:none;
+    cursur:pointer;
+    transition :all 0.8s ease;
+    font-weight:300;
+}
+.button:hover{
+    background: #9055ff;
+    transition : 0.4s ;
+}
+.message{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+}
+.data{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-right:2px solid #b5aaff;
+    padding: 0 20px;
+}
+.data i{
+    margin-right:10px;
+    font-width:50px;
+}
+.data:last-child{
+    border-right:none;
+    
+}
